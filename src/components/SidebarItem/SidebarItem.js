@@ -5,20 +5,16 @@ import { forwardRef } from 'react';
 const SidebarItem = forwardRef((
     {
         icon,
-        className, 
+        className,
         title,
         to,
-        onClick, 
+        hasSubChild = [],
+        onClick,
         active = false,
         ...props
     }, ref
-    ) => {
-
-        const classes = {
-            [className]: className,
-            active
-        };
-    return ( <>
+) => {
+    return (<>
         <Link ref={ref} className={[`
             flex 
             w-full 
@@ -48,7 +44,7 @@ const SidebarItem = forwardRef((
             </div>
             <div className="
             text-base 
-            font-bold 
+            font-semibold 
             whitespace-no-wrap
             lg:hidden
             md:block
@@ -58,7 +54,56 @@ const SidebarItem = forwardRef((
                 <span className="">{title}</span>
             </div>
         </Link>
-    </> );
+        <div className="
+            [&>a:last-child>div:first-child>div]:h-1/2
+            [&>a:last-child>div:first-child]:items-start
+        ">
+        {
+            hasSubChild && hasSubChild.map((child, index) => {
+                
+                return <Link to={child.to && child.to}
+                    className="
+                    flex 
+                    w-full 
+                    h-10 
+                    items-center 
+                    cursor-pointer 
+                    rounded-md
+                    lg:hidden
+                ">
+                    <div className="
+                    rounded-md 
+                    h-full 
+                    flex 
+                    items-center 
+                    justify-center 
+                    text-xl
+                    min-w-[50px]
+                    md:mt-0
+                ">
+                        <div className="
+                        w-[2px]
+                        h-full
+                        bg-slate-300
+                    "></div>
+                    </div>
+                    <div className="
+                    ml-2
+                    text-base 
+                    font-semibold 
+                    text-[var(--colorTextSecondary)]
+                    whitespace-no-wrap
+                    lg:hidden
+                    md:block
+                    md:text-xs
+                ">
+                        {child.title}
+                    </div>
+                </Link>
+            })
+        }
+        </div>
+    </>);
 });
 
-export default  SidebarItem;
+export default SidebarItem;
