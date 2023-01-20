@@ -1,4 +1,4 @@
-
+import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 
 function Button({
@@ -43,7 +43,7 @@ function Button({
         Comp = 'a';
     }
 
-    const classes = [
+    const classes = classNames(
             `wrapper`, 
             className,
             primary,
@@ -55,7 +55,7 @@ function Button({
             small,
             large,
             w100
-    ];
+    );
 
     return (
         <Comp className={classes} {...props}>
