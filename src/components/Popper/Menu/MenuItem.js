@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import Button from '~/components/Button';
 
 const setDark = () => {
@@ -38,7 +39,7 @@ const logout = () => {
 }
 
 function MenuItem({ data, onClick, onThemeChange = false, onLogout = false }) {
-    const classes = [`
+    const classes = classNames(`
         w-full
         ml-0
         justify-start
@@ -56,9 +57,9 @@ function MenuItem({ data, onClick, onThemeChange = false, onLogout = false }) {
         [&.separate]:border-[var(--colorLineSecondary)]
         [&>span]:leading-[15px]
     `,  
-        data.separate && 'separate'
+        {'separate': data.separate}
         
-    ] ;
+    ) ;
     return (
         <Button className={classes} leftIcon={data.icon && data.icon} to={data.to} onClick={onLogout ? logout : onClick}>
             {data.title}
