@@ -13,6 +13,7 @@ function Sidebar( {
         flex 
         flex-col 
         justify-between
+        bg-[var(--colorBGPrimary)]
         md:justify-center
         md:flex-row
         ">

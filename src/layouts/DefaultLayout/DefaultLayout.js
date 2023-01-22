@@ -4,6 +4,7 @@ import { RiDashboardFill } from "react-icons/ri";
 import { FaLink } from "react-icons/fa";
 import { MdInfo } from "react-icons/md";
 import { AiFillBook } from "react-icons/ai";
+import Header from "../components/Header";
 
 function DefaultLayout({ children }) {
     const content = [
@@ -68,15 +69,22 @@ function DefaultLayout({ children }) {
             ">
                 <SideBar data={content}/>
             </div>
-            <div className="
-            p-[16px] 
+            <div
+                className="
+            
             ml-[var(--default-layout-sidebar-width)]
             lg:ml-[var(--default-layout-sidebar-close-width)]
             md:ml-0
             md:mb-[var(--default-layout-header-height)]
-            ">
+            "
+            >
+                <Header/>
+                <div className="p-[16px] " >
+                
                 {children}
             </div>
+            </div>
+            
         </div>
     </> );
 }
