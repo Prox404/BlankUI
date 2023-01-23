@@ -1,5 +1,6 @@
 function Wrapper({ children, className }) {
     return <div className={[
+        
         `
         w-full
         flex
@@ -11,11 +12,11 @@ function Wrapper({ children, className }) {
         bg-[var(--popperBackground)]
         border-2
         [&>a]:border-b-2
-        [&>a]border-slate-300
+        [&>a]:border-slate-100
         [&>a:last-child]border-b-0
         [&>a]:border-solid
-        `,
-        className
+        ${className}
+        `
     ]}>
         {children}
     </div>;
