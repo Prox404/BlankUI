@@ -20,6 +20,8 @@ function Sidebar( {
             <div className="
             md:flex 
             md:flex-row 
+            md:w-full
+            md:justify-evenly
             ">
 
                 <div className="
@@ -53,7 +55,7 @@ function Sidebar( {
                         whitespace-no-wrap
                         lg:hidden
                     ">
-                        <span className="">BlankUI</span>
+                        <span className="text-[var(--colorTextPrimary)]">BlankUI</span>
                     </div>
                 </div>
                 <form className="
@@ -101,11 +103,11 @@ function Sidebar( {
                 border
                 border-slate-200
                 rounded-md
-                lg:justify-center
                 md:py-0
                 lg:border-0
+                lg:justify-center
                 md:flex-col
-                
+                md:w-[20%]
             ">
                 <div className="
                 flex 
@@ -115,18 +117,17 @@ function Sidebar( {
                     <img className="
                     w-[30px]
                     h-[30px]
+                    md:w-[35px]
+                    md:h-[35px]
                     rounded-full
-                    " src="https://i.ibb.co/176z8y8/Prox-logo-white.png" alt="profile" />
+                    " 
+                    src="https://i.ibb.co/cwYYbVh/2.jpg" alt="profile" />
                 </div>
                 <div className="
                 text-base 
                 font-semibold 
                 whitespace-no-wrap
                 lg:hidden
-                md:block
-                md:text-xs
-                md:text-[var(--colorTextTertiary)]
-                md:mt-[2px]
                 ">
                     <span className="">Prox</span>
                 </div>

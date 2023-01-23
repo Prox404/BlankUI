@@ -34,9 +34,10 @@ function Menu({ children, placement="top-end", className, items = [], onChange =
         });
     };
 
-    // console.log(items);
-
+    console.log(items.length === 0);
+    
     return (
+        
         <Tippy
             interactive
             delay={[0, 700]}
@@ -49,9 +50,7 @@ function Menu({ children, placement="top-end", className, items = [], onChange =
                     ${className}
                     ${items.length === 0 && 'hidden'}`
                 } tabIndex="-1" {...attrs}>
-                    <PopperWrapper className="
-                        
-                    ">
+                    <PopperWrapper className={`${items.length === 0 && 'hidden'}`} >
                         {history.length > 1 && (
                             <Header
                                 title={current.title}
