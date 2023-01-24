@@ -77,7 +77,7 @@ function Sidebar( {
                             text-[var(--colorTextPrimary)]
                             border-2
                             border-slate-200
-                            rounded-lg
+                            rounded-md
                             bg-[var(--colorBGPrimary)]
                             focus:ring-slate-400
                             focus:border-slate-400

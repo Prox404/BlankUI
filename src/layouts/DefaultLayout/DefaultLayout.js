@@ -78,10 +78,10 @@ function DefaultLayout({ children }) {
             </div>
             <div
                 className="
+            mt-[60px]
             ml-[var(--default-layout-sidebar-width)]
             lg:ml-[var(--default-layout-sidebar-close-width)]
             md:ml-0
-            md:mt-[60px]
             md:mb-[var(--default-layout-header-height)]
             "
             >
