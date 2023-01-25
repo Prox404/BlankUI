@@ -26,9 +26,9 @@ function Card({
         Comp = 'a';
     }
 
-    console.log(imageCard.length > 0 || withoutPadding);
-    console.log('imageCard',imageCard.length );
-    console.log('withoutPadding',withoutPadding);
+    // console.log(imageCard.length > 0 || withoutPadding);
+    // console.log('imageCard',imageCard.length );
+    // console.log('withoutPadding',withoutPadding);
 
     return (<>
         <Comp to={to} className={`${horizontalCard ? 'flex flex-row' : 'block'} ${(imageCard.length > 0 || withoutPadding) ?  '' : 'p-6' } bg-[var(--colorBGPrimary)] border border-gray-200 rounded-lg ${hoverEffect ? 'hover:bg-gray-100' : ''} ${className} overflow-hidden` }>
