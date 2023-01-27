@@ -4,6 +4,7 @@ const useHeadingsData = () => {
     const [nestedHeadings, setNestedHeadings] = useState([]);
 
     const getNestedHeadings = (headingElements) => {
+        console.log(headingElements);
         const nestedHeadings = [];
       
         headingElements.forEach((heading, index) => {
@@ -24,8 +25,10 @@ const useHeadingsData = () => {
   
     useEffect(() => {
       const headingElements = Array.from(
-        document.querySelectorAll("main h2, main h3")
+        document.querySelectorAll("main h2,main h3")
       );
+
+      console.log(headingElements);
   
       // Created a list of headings, with H3s nested
       const newNestedHeadings = getNestedHeadings(headingElements);
