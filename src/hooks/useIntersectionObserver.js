@@ -20,8 +20,9 @@ const useIntersectionObserver = (setActiveId) => {
                 headingElements.findIndex((heading) => heading.id === id);
 
             // If there is only one visible heading, this is our "active" heading
+            console.log(visibleHeadings);
             if (visibleHeadings.length === 1) {
-                setActiveId(visibleHeadings[0].target.id);
+                setActiveId(visibleHeadings[1].target.id);
                 // If there is more than one visible heading,
                 // choose the one that is closest to the top of the page
             } else if (visibleHeadings.length > 1) {
@@ -29,7 +30,7 @@ const useIntersectionObserver = (setActiveId) => {
                     (a, b) => getIndexFromId(a.target.id) > getIndexFromId(b.target.id)
                 );
 
-                setActiveId(sortedVisibleHeadings[0].target.id);
+                setActiveId(sortedVisibleHeadings[1].target.id);
             }
         };
 
