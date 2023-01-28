@@ -12,7 +12,7 @@ function Cards() {
     }
 
     return (<>
-        <div className="grid grid-cols-2">
+        <div>
             <div >
                 <h1 className="font-bold leading-tight text-4xl mt-0 mb-2">Cards</h1>
                 <h3 className="font-normal leading-tight text-xl mt-0 pb-2 mb-2 border-b-2 border-slate-100">Get started with a large variety of React card examples for your web project</h3>
@@ -497,9 +497,9 @@ function Cards() {
                     </section>
                 </main>
             </div>
-            <div>
-                <TableOfContents className="fixed top-[60px]"/>
-            </div>
+            
+                <TableOfContents/>
+            
         </div>
     </>);
 }
