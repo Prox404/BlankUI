@@ -1,4 +1,4 @@
-import Card from "~/components/Card/Card";
+import Card from "~/components/Card";
 import images from "~/assets/images";
 import { useState } from "react";
 import TableOfContents from "~/components/TableOfContents";
