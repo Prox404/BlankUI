@@ -11,7 +11,7 @@ function Header() {
     })
 
     return (<>
-        <header className="z-20 fixed top-0 md:w-full lg:w-[calc(100vw-88px-20px)] 2xl:w-[calc(100vw-222px-20px)] right-0 border-b-2 border-slate-100">
+        <div className="z-20 fixed top-0 md:w-full lg:w-[calc(100vw-88px-20px)] w-[calc(100vw-222px-20px)] right-0 border-b-2 border-slate-100">
             <div className="bg-[var(--colorBGPrimary)] border-gray-200 px-4 lg:px-6 py-2.5 ">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <a href="/" className="flex items-center">
@@ -41,7 +41,7 @@ function Header() {
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
     </>);
 }
 
