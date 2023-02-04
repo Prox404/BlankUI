@@ -73,7 +73,7 @@ function Form() {
                             <Card className={`max-w-sm`}>
                                 <form>
                                     <div class="mb-6">
-                                        <GoogleInput type="email" Label="Email" id="Email" required/>
+                                        <GoogleInput type="email" Label="Email" id="Email" disabled/>
                                     </div>
                                     <div class="mb-6">
                                         <GoogleInput type="password" Label="Password" id="Password" required/>
