@@ -73,7 +73,7 @@ function Form() {
                             <Card className={`max-w-sm`}>
                                 <form>
                                     <div class="mb-6">
-                                        <GoogleInput type="email" Label="Email" id="Email" disabled/>
+                                        <GoogleInput type="email" Label="Email" id="Email"/>
                                     </div>
                                     <div class="mb-6">
                                         <GoogleInput type="password" Label="Password" id="Password" required/>
@@ -81,6 +81,31 @@ function Form() {
                                     <div class="flex items-start mb-6">
                                         <div class="flex items-center h-5">
                                             <Checkbox id="remember" type="checkbox" value="" class="" required/>
+                                        </div>
+                                        <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
+                                    </div>
+                                    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+                                </form>
+                            </Card>
+                        </div>
+                    </section>
+                    <section className="mb-4 pb-4 border-b-2 border-slate-100" >
+                        <h2 className="font-medium leading-tight text-2xl mt-0 mb-2" id="disable-input">
+                            <span className="text-gray-400"> # </span>
+                            Disabled Input
+                        </h2>
+                        <div>
+                            <Card className={`max-w-sm`}>
+                                <form>
+                                    <div class="mb-6">
+                                        <GoogleInput type="email" Label="Email" id="Email" disabled/>
+                                    </div>
+                                    <div class="mb-6">
+                                        <GoogleInput type="password" Label="Password" id="Password" value="Some password" disabled/>
+                                    </div>
+                                    <div class="flex items-start mb-6">
+                                        <div class="flex items-center h-5">
+                                            <Checkbox id="remember" type="checkbox" class="" disabled/>
                                         </div>
                                         <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
                                     </div>
