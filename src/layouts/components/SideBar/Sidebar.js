@@ -1,4 +1,5 @@
 import { BsCircleHalf } from "react-icons/bs";
+import images from "~/assets/images";
 
 import SidebarItem from "~/components/SidebarItem";
 
@@ -121,7 +122,7 @@ function Sidebar( {
                     md:h-[35px]
                     rounded-full
                     " 
-                    src="https://i.ibb.co/cwYYbVh/2.jpg" alt="profile" />
+                    src={images.faces} alt="profile" />
                 </div>
                 <div className="
                 text-base 
