@@ -23,7 +23,7 @@ const SidebarItem = forwardRef((
         md:flex
         md:items-center
     ">
-        <Menu className="z-40 2xl:hidden lg:block md:hidden" placement="right" items={hasSubChild && hasSubChild}>
+        <Menu className="z-40 hidden lg:block md:hidden" placement="right" items={hasSubChild && hasSubChild}>
             <Link ref={ref} className={[`
             flex 
             w-full 
