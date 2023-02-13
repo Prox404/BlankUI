@@ -122,6 +122,10 @@ function Form() {
                                     <div className="mb-6">
                                         <FloatingLabelsInput type="email" Label="Email" Icon={emailIcon} id="Email" required/>
                                     </div>
+                                    <div className="mb-6">
+                                        <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+                                        <Input type="email" id="email" Icon={emailIcon} placeholder="name@prox.com" required />
+                                    </div>
                                 </form>
                             </Card>
                         </div>
