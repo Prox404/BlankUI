@@ -119,7 +119,9 @@ function Form() {
                                     <div className="mb-6">
                                         <GoogleInput type="email" Label="Email" id="Email" Icon={emailIcon} placeholder="YourEmail@example.com" required/>
                                     </div>
-                                    <p id="helper-text-explanation" className="mt-2 text-sm text-gray-500 dark:text-gray-400">We’ll never share your details. Read our <a href="/" className="font-medium text-blue-600 hover:underline dark:text-blue-500">Privacy Policy</a>.</p>
+                                    <div className="mb-6">
+                                        <FloatingLabelsInput type="email" Label="Email" Icon={emailIcon} id="Email" required/>
+                                    </div>
                                 </form>
                             </Card>
                         </div>
