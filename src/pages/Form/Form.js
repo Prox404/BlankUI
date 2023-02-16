@@ -146,6 +146,30 @@ function Form() {
                             </Card>
                         </div>
                     </section>
+                    <section className="mb-4 pb-4 border-b-2 border-slate-100" >
+                        <h2 className="font-medium leading-tight text-2xl mt-0 mb-2" id="validation-text">
+                            <span className="text-gray-400"> # </span>
+                            Form validation text
+                        </h2>
+                        <div>
+                            <Card>
+                                <form>
+                                    <div className="mb-6">
+                                        <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+                                        <Input type="email" id="email" placeholder="name@prox.com" value="example@gmail.com" Success="Successful text" />
+                                    </div>
+                                    <div className="mb-6">
+                                        <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+                                        <Input type="email" id="email" placeholder="name@prox.com" value="example@gmail.com" Error="Error text" />
+                                    </div>
+                                    <div className="mb-6">
+                                        <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+                                        <Input type="email" id="email" placeholder="name@prox.com" value="example@gmail.com" Info="Information text" />
+                                    </div>
+                                </form>
+                            </Card>
+                        </div>
+                    </section>
                 </main>
             </div>
             <TableOfContents />
