@@ -4,6 +4,7 @@ import TableOfContents from "~/components/TableOfContents";
 import Checkbox from "~/components/Checkbox";
 import FloatingLabelsInput from "~/components/FloatingLabelsInput";
 import GoogleInput from "~/components/GoogleInput";
+import TextArea from "~/components/TextArea";
 
 function Form() {
 
@@ -165,6 +166,21 @@ function Form() {
                                     <div className="mb-6">
                                         <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
                                         <Input type="email" id="email" placeholder="name@prox.com" value="example@gmail.com" Info="Information text" />
+                                    </div>
+                                </form>
+                            </Card>
+                        </div>
+                    </section>
+                    <section className="mb-4 pb-4 border-b-2 border-slate-100" >
+                        <h2 className="font-medium leading-tight text-2xl mt-0 mb-2" id="text-area">
+                            <span className="text-gray-400"> # </span>
+                            Textarea
+                        </h2>
+                        <div>
+                            <Card>
+                                <form>
+                                    <div className="mb-6">
+                                        <TextArea label="Message" placeholder="Leave a comment..."/>
                                     </div>
                                 </form>
                             </Card>
