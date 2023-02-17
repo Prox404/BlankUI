@@ -32,7 +32,7 @@ function Input({
             Error && <p class="mt-2 text-sm text-red-600 dark:text-red-500">{Error}</p>
         }
         {
-            Info && <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">{Info}</p>
+            Info && <p class="mt-2 text-sm text-blue-500 dark:text-blue-400">{Info}</p>
         }
     </>
     
