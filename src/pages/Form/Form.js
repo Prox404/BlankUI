@@ -5,10 +5,17 @@ import Checkbox from "~/components/Checkbox";
 import FloatingLabelsInput from "~/components/FloatingLabelsInput";
 import GoogleInput from "~/components/GoogleInput";
 import TextArea from "~/components/TextArea";
+import Select from "~/components/Select";
 
 function Form() {
 
     const emailIcon = <svg aria-hidden="true" className="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>;
+    const options = [
+        { value: '1', label: 'Option 1' },
+        { value: '2', label: 'Option 2' },
+        { value: '3', label: 'Option 3' },
+        { value: '4', label: 'Option 4' },
+    ]
 
     return (<>
         <div>
@@ -181,6 +188,21 @@ function Form() {
                                 <form>
                                     <div className="mb-6">
                                         <TextArea label="Message" placeholder="Leave a comment..."/>
+                                    </div>
+                                </form>
+                            </Card>
+                        </div>
+                    </section>
+                    <section className="mb-4 pb-4 border-b-2 border-slate-100" >
+                        <h2 className="font-medium leading-tight text-2xl mt-0 mb-2" id="select-input">
+                            <span className="text-gray-400"> # </span>
+                            Select input 
+                        </h2>
+                        <div>
+                            <Card>
+                                <form>
+                                    <div className="mb-6">
+                                        <Select Label="Select your country" Options={options} Selected={2}/>
                                     </div>
                                 </form>
                             </Card>
