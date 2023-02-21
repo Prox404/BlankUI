@@ -1,5 +1,8 @@
 function Select({
     Label = '',
+    Error = '',
+    Success = '',
+    Info = '', 
     Options = [],
     Selected = 0,
     ...props }) {
@@ -12,6 +15,15 @@ function Select({
                 })
             }
         </select>
+        {
+            Success && <p class="mt-2 text-sm text-green-600 dark:text-green-500">{Success}</p>
+        }
+        {
+            Error && <p class="mt-2 text-sm text-red-600 dark:text-red-500">{Error}</p>
+        }
+        {
+            Info && <p class="mt-2 text-sm text-blue-500 dark:text-blue-400">{Info}</p>
+        }
     </>);
 }
 

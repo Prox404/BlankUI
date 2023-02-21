@@ -41,9 +41,8 @@ function Form() {
                                     </div>
                                     <div className="flex items-start mb-6">
                                         <div className="flex items-center h-5">
-                                            <Checkbox id="remember" type="checkbox" value="" className="" required/>
+                                            <Checkbox id="remember" Label="Remember me" type="checkbox" value="" className="" required />
                                         </div>
-                                        <label for="remember" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
                                     </div>
                                     <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
                                 </form>
@@ -59,16 +58,15 @@ function Form() {
                             <Card className={`max-w-sm`}>
                                 <form>
                                     <div className="mb-6">
-                                        <FloatingLabelsInput type="email" Label="Email" id="Email" required/>
+                                        <FloatingLabelsInput type="email" Label="Email" id="Email" required />
                                     </div>
                                     <div className="mb-6">
-                                        <FloatingLabelsInput type="password" Label="Password" id="Password" required/>
+                                        <FloatingLabelsInput type="password" Label="Password" id="Password" required />
                                     </div>
                                     <div className="flex items-start mb-6">
                                         <div className="flex items-center h-5">
-                                            <Checkbox id="remember" type="checkbox" value="" className="" required/>
+                                            <Checkbox id="remember" Label="Remember me" type="checkbox" value="" className="" required />
                                         </div>
-                                        <label for="remember" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
                                     </div>
                                     <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
                                 </form>
@@ -84,16 +82,15 @@ function Form() {
                             <Card className={`max-w-sm`}>
                                 <form>
                                     <div className="mb-6">
-                                        <GoogleInput type="email" Label="Email" id="Email"/>
+                                        <GoogleInput type="email" Label="Email" id="Email" />
                                     </div>
                                     <div className="mb-6">
-                                        <GoogleInput type="password" Label="Password" id="Password" required/>
+                                        <GoogleInput type="password" Label="Password" id="Password" required />
                                     </div>
                                     <div className="flex items-start mb-6">
                                         <div className="flex items-center h-5">
-                                            <Checkbox id="remember" type="checkbox" value="" className="" required/>
+                                            <Checkbox id="remember" Label="Remember me" type="checkbox" value="" className="" required />
                                         </div>
-                                        <label for="remember" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
                                     </div>
                                     <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
                                 </form>
@@ -109,7 +106,7 @@ function Form() {
                             <Card>
                                 <form>
                                     <div className="mb-6">
-                                        <GoogleInput type="email" Label="Email" id="Email" required/>
+                                        <GoogleInput type="email" Label="Email" id="Email" required />
                                     </div>
                                     <p id="helper-text-explanation" className="mt-2 text-sm text-gray-500 dark:text-gray-400">We’ll never share your details. Read our <a href="/" className="font-medium text-blue-600 hover:underline dark:text-blue-500">Privacy Policy</a>.</p>
                                 </form>
@@ -125,10 +122,10 @@ function Form() {
                             <Card>
                                 <form>
                                     <div className="mb-6">
-                                        <GoogleInput type="email" Label="Email" id="Email" Icon={emailIcon} placeholder="YourEmail@example.com" required/>
+                                        <GoogleInput type="email" Label="Email" id="Email" Icon={emailIcon} placeholder="YourEmail@example.com" required />
                                     </div>
                                     <div className="mb-6">
-                                        <FloatingLabelsInput type="email" Label="Email" Icon={emailIcon} id="Email" required/>
+                                        <FloatingLabelsInput type="email" Label="Email" Icon={emailIcon} id="Email" required />
                                     </div>
                                     <div className="mb-6">
                                         <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
@@ -187,7 +184,7 @@ function Form() {
                             <Card>
                                 <form>
                                     <div className="mb-6">
-                                        <TextArea label="Message" placeholder="Leave a comment..."/>
+                                        <TextArea label="Message" placeholder="Leave a comment..." />
                                     </div>
                                 </form>
                             </Card>
@@ -196,14 +193,31 @@ function Form() {
                     <section className="mb-4 pb-4 border-b-2 border-slate-100" >
                         <h2 className="font-medium leading-tight text-2xl mt-0 mb-2" id="select-input">
                             <span className="text-gray-400"> # </span>
-                            Select input 
+                            Select input
                         </h2>
                         <div>
                             <Card>
                                 <form>
                                     <div className="mb-6">
-                                        <Select Label="Select your country" Options={options} Selected={2}/>
+                                        <Select Label="Select your country" Options={options} Selected={2} />
                                     </div>
+                                </form>
+                            </Card>
+                        </div>
+                    </section>
+                    <section className="mb-4 pb-4 border-b-2 border-slate-100" >
+                        <h2 className="font-medium leading-tight text-2xl mt-0 mb-2" id="checkbox">
+                            <span className="text-gray-400"> # </span>
+                            Checkbox
+                        </h2>
+                        <div>
+                            <Card>
+                                <form>
+                                    <fieldset>
+                                        <legend class="sr-only">Checkbox variants</legend>
+
+                                        <Checkbox Label={<>I agree to the <a href="/" class="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a>.</>} disabled/>
+                                    </fieldset>
                                 </form>
                             </Card>
                         </div>
