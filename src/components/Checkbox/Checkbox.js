@@ -6,7 +6,7 @@ function Checkbox({ className = '',disabled = false, Label = '', Helper = '', ..
             </div>
             <div class="ml-2 text-sm">
                 {
-                    Label && <label for="helper-checkbox" class="font-medium text-gray-900 dark:text-gray-300">{Label}</label>
+                    Label && <label for="helper-checkbox" class={`${disabled ? 'text-gray-400 dark:text-gray-500' : ' text-gray-900 dark:text-gray-300'} `}>{Label}</label>
                 }
                 {
                     Helper && <p id="helper-checkbox-text" class="text-xs font-normal text-gray-500 dark:text-gray-400">{Helper}</p>

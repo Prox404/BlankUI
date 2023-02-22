@@ -6,6 +6,7 @@ import FloatingLabelsInput from "~/components/FloatingLabelsInput";
 import GoogleInput from "~/components/GoogleInput";
 import TextArea from "~/components/TextArea";
 import Select from "~/components/Select";
+import RadioButton from "~/components/RadioButton";
 
 function Form() {
 
@@ -215,8 +216,42 @@ function Form() {
                                 <form>
                                     <fieldset>
                                         <legend class="sr-only">Checkbox variants</legend>
+                                        <Checkbox Label={<>I agree to the <a href="/" class="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a>.</>} defaultChecked />
+                                        <Checkbox Label={`I want to get promotional offers`} />
+                                        <Checkbox Label={`I am 18 years or older`} />
+                                        <Checkbox Label={`Free shipping via BlankUI`} Helper={`For orders shipped from $25 in books or $29 in other categories`} />
+                                        <Checkbox Label={`Eligible for international shipping (disabled)`} disabled />
+                                    </fieldset>
+                                </form>
+                            </Card>
+                        </div>
+                    </section>
+                    <section className="mb-4 pb-4 border-b-2 border-slate-100" >
+                        <h2 className="font-medium leading-tight text-2xl mt-0 mb-2" id="radio-button">
+                            <span className="text-gray-400"> # </span>
+                            Radio Button
+                        </h2>
+                        <div>
+                            <Card>
+                                <form>
+                                    <fieldset>
+                                        <legend class="sr-only">Countries</legend>
 
-                                        <Checkbox Label={<>I agree to the <a href="/" class="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a>.</>} disabled/>
+                                        <div class="flex items-center mb-4">
+                                            <RadioButton Label="United States" name="countries" value="USA" defaultChecked/>
+                                        </div>
+                                        <div class="flex items-center mb-4">
+                                            <RadioButton Label="Germany" name="countries" value="Germany" />
+                                        </div>
+                                        <div class="flex items-center mb-4">
+                                            <RadioButton Label="Spain" name="countries" value="Spain" />
+                                        </div>
+                                        <div class="flex items-center mb-4">
+                                            <RadioButton Label="United Kingdom" name="countries" value="United Kingdom" />
+                                        </div>
+                                        <div class="flex items-center mb-4">
+                                            <RadioButton Label="China (disabled)" name="countries" value="China" disabled/>
+                                        </div>
                                     </fieldset>
                                 </form>
                             </Card>
