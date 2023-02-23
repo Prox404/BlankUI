@@ -7,6 +7,7 @@ import GoogleInput from "~/components/GoogleInput";
 import TextArea from "~/components/TextArea";
 import Select from "~/components/Select";
 import RadioButton from "~/components/RadioButton";
+import UploadFile from "~/components/UploadFile";
 
 function Form() {
 
@@ -238,7 +239,7 @@ function Form() {
                                         <legend class="sr-only">Countries</legend>
 
                                         <div class="flex items-center mb-4">
-                                            <RadioButton Label="United States" name="countries" value="USA" defaultChecked/>
+                                            <RadioButton Label="United States" name="countries" value="USA" defaultChecked />
                                         </div>
                                         <div class="flex items-center mb-4">
                                             <RadioButton Label="Germany" name="countries" value="Germany" />
@@ -250,9 +251,22 @@ function Form() {
                                             <RadioButton Label="United Kingdom" name="countries" value="United Kingdom" />
                                         </div>
                                         <div class="flex items-center mb-4">
-                                            <RadioButton Label="China (disabled)" name="countries" value="China" disabled/>
+                                            <RadioButton Label="China (disabled)" name="countries" value="China" disabled />
                                         </div>
                                     </fieldset>
+                                </form>
+                            </Card>
+                        </div>
+                    </section>
+                    <section className="mb-4 pb-4 border-b-2 border-slate-100" >
+                        <h2 className="font-medium leading-tight text-2xl mt-0 mb-2" id="form-upload">
+                            <span className="text-gray-400"> # </span>
+                            Form upload
+                        </h2>
+                        <div>
+                            <Card>
+                                <form>
+                                    <UploadFile Label="Upload File"/>
                                 </form>
                             </Card>
                         </div>
