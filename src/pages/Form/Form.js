@@ -8,6 +8,7 @@ import TextArea from "~/components/TextArea";
 import Select from "~/components/Select";
 import RadioButton from "~/components/RadioButton";
 import UploadFile from "~/components/UploadFile";
+import Toggle from "~/components/Toggle";
 
 function Form() {
 
@@ -266,7 +267,22 @@ function Form() {
                         <div>
                             <Card>
                                 <form>
-                                    <UploadFile Label="Upload File"/>
+                                    <UploadFile Label="Upload File" />
+                                </form>
+                            </Card>
+                        </div>
+                    </section>
+                    <section className="mb-4 pb-4 border-b-2 border-slate-100" >
+                        <h2 className="font-medium leading-tight text-2xl mt-0 mb-2" id="form-toggle">
+                            <span className="text-gray-400"> # </span>
+                            Toggle
+                        </h2>
+                        <div>
+                            <Card>
+                                <form>
+                                    <Toggle Label="Toggle me" /> <br/>
+                                    <Toggle Label="Toggle" defaultChecked/><br/>
+                                    <Toggle Label="Toggle me" disabled />
                                 </form>
                             </Card>
                         </div>
