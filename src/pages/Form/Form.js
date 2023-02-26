@@ -23,7 +23,7 @@ function Form() {
     return (<>
         <div>
             <div >
-                <h1 className="font-bold leading-tight text-4xl mt-0 mb-2">From</h1>
+                <h1 className="font-bold leading-tight text-4xl mt-0 mb-2">Form</h1>
                 <h3 className="font-normal leading-tight text-xl mt-0 pb-2 mb-2 border-b-2 border-slate-100">Get started with a large variety of React form examples for your web project</h3>
                 <main>
                     <section className="mb-4 pb-4 border-b-2 border-slate-100" >
@@ -35,11 +35,11 @@ function Form() {
                             <Card className={`max-w-sm`}>
                                 <form>
                                     <div className="mb-6">
-                                        <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+                                        <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
                                         <Input type="email" id="email" placeholder="name@prox.com" required />
                                     </div>
                                     <div className="mb-6">
-                                        <label for="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your password</label>
+                                        <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your password</label>
                                         <Input type="password" id="password" placeholder="********" required />
                                     </div>
                                     <div className="flex items-start mb-6">
@@ -131,7 +131,7 @@ function Form() {
                                         <FloatingLabelsInput type="email" Label="Email" Icon={emailIcon} id="Email" required />
                                     </div>
                                     <div className="mb-6">
-                                        <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+                                        <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
                                         <Input type="email" id="email" Icon={emailIcon} placeholder="name@prox.com" required />
                                     </div>
                                 </form>
@@ -147,7 +147,7 @@ function Form() {
                             <Card>
                                 <form>
                                     <div className="mb-6">
-                                        <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+                                        <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
                                         <Input type="email" id="email" Addon="@" placeholder="name@prox.com" required />
                                     </div>
                                 </form>
@@ -163,15 +163,15 @@ function Form() {
                             <Card>
                                 <form>
                                     <div className="mb-6">
-                                        <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+                                        <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
                                         <Input type="email" id="email" placeholder="name@prox.com" value="example@gmail.com" Success="Successful text" />
                                     </div>
                                     <div className="mb-6">
-                                        <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+                                        <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
                                         <Input type="email" id="email" placeholder="name@prox.com" value="example@gmail.com" Error="Error text" />
                                     </div>
                                     <div className="mb-6">
-                                        <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+                                        <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
                                         <Input type="email" id="email" placeholder="name@prox.com" value="example@gmail.com" Info="Information text" />
                                     </div>
                                 </form>
