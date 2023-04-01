@@ -26,6 +26,20 @@ function Avatars() {
                             </Card>
                         </div>
                     </section>
+                    <section className="mb-4 pb-4 border-b-2 border-slate-100" >
+                        <h2 className="font-medium leading-tight text-2xl mt-0 mb-2" id="default-avatar">
+                            <span className="text-gray-400"> # </span>
+                            Bordered  Avatar
+                        </h2>
+                        <div>
+                            <Card >
+                                <div className={`flex flex-row`}>
+                                    <Avatar src={images.faces} size="12" alt="avatar" bordered/>
+                                    <Avatar className={`ml-2`} src={images.faces} size="12" alt="avatar" rounded="sm" bordered />
+                                </div>
+                            </Card>
+                        </div>
+                    </section>
 
                 </main>
             </div>
